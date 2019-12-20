@@ -23,6 +23,6 @@ def now_serving(line)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{line[0]}."
-    line.shift  #
+    line.shift  #remove first value in array, if array is empty, returns nil
   end
 end
